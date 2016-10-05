@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#cccccc"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/bill_img"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/type_big_2"/>
+        <TextView
+            android:id="@+id/bill_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/bill_img"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:text="qita"
+            />
+
+        <TextView
+            android:id="@+id/bill_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bill_img"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:text="用餐12.0"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

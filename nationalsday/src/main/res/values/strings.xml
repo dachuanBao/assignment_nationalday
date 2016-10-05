@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NationalsDay</string>
+    <string name="title_activity_notebook">NotebookActivity</string>
+    <string name="bottom_navigation_notebook">记事簿</string>
+    <string name="bottom_navigation_myBill">我的账单</string>
+    <string name="bottom_navigation_myAccount">我的账户</string>
+</resources>

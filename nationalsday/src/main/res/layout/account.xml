@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#1895DF"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#1895DF"
+            android:layout_weight="1"
+
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="转账"
+            android:textSize="23.7sp"
+            android:textColor="#ffffff"
+            android:background="#1895DF"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/shape_roundrect"
+
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:layout_centerVertical="true"
+                android:textColor="#000000"
+
+                android:text="总资产"
+                />
+            <TextView
+                android:id="@+id/totalMoney_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/account_numSize"
+                android:textColor="#000000"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="-30.0"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_roundrect_cyan"
+            >
+            <ImageView
+                android:id="@+id/cash"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/icon_account_xianjin_new"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cash"
+
+                android:textSize="@dimen/account_textSize"
+                android:textColor="#ffffff"
+                android:text="现金余额"
+                />
+            <TextView
+                android:id="@+id/cash_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/account_numSize"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="-30.0"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/shape_roundrect_blue"
+            >
+            <ImageView
+                android:id="@+id/chuxucard"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_account_yinhangka"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chuxucard"
+                android:textSize="@dimen/account_textSize"
+                android:textColor="#ffffff"
+                android:text="储蓄卡余额"
+                />
+            <TextView
+                android:id="@+id/deposit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/account_numSize"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="0.0"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/shape_roundrect_green"
+            >
+            <ImageView
+                android:id="@+id/creditCard"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_account_yinhangka"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/creditCard"
+                android:textSize="@dimen/account_textSize"
+                android:textColor="#ffffff"
+                android:text="信用卡余额"
+                />
+            <TextView
+                android:id="@+id/creditCard_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/account_numSize"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="60.0"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/shape_roundrect_yellow"
+            >
+            <ImageView
+                android:id="@+id/zhifubao"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_account_zhifubao"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zhifubao"
+                android:textSize="@dimen/account_textSize"
+                android:textColor="#ffffff"
+                android:text="网络帐户余额"
+                />
+            <TextView
+                android:id="@+id/alipay_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/account_numSize"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="0.0"/>
+
+            </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
